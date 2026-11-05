@@ -43,8 +43,8 @@ c=settings$c
 d=settings$d
 
 # Initial estimates
-alp_ini = 0.5
-bet_ini = 0.5
+alp_ini = 0.1
+bet_ini = 0.1
 
 # Fuzzification
 f1 = 0.05
@@ -55,15 +55,15 @@ Min_Dif = 0.0001
 Max_Iter = 30
 
 # MCMC settings
-N = 5100
-P = 100
+N = 11000
+P = 1000
 
 # Monte Carlo EM settings
 M = 100
 K = 5
 
 # Simulation replications
-iterations = 500
+iterations = 2000
 
 # Required packages for the revised functions
 for (pkg in c("numDeriv", "coda", "knitr")) {
