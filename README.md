@@ -103,15 +103,15 @@ The script runs **one setting per execution**. Change `index` and rerun for othe
 | Variable | Default | Meaning |
 | --- | --- | --- |
 | `index` | `7` | Selected simulation setting. |
-| `alp_ini`, `bet_ini` | `0.5`, `0.5` | Initial values for numerical estimation. |
+| `alp_ini`, `bet_ini` | `0.1`, `0.1` | Initial values for numerical estimation. |
 | `f1`, `f2` | `0.05`, `0.05` | Relative left and right membership widths. |
 | `Min_Dif` | `0.0001` | EM stopping tolerance for the Euclidean parameter change. |
 | `Max_Iter` | `30` | Maximum EM iterations. |
-| `N` | `5100` | MH iterations per prior per replication. |
-| `P` | `100` | Discarded MH burn-in iterations; 5,000 draws remain by default. |
+| `N` | `11000` | MH iterations per prior per replication. |
+| `P` | `1000` | Discarded MH burn-in iterations; 5,000 draws remain by default. |
 | `M` | `100` | MCEM iterations; distinct from the MH control `N`. |
 | `K` | `5` | Monte Carlo draws per fuzzy observation or censored conditional component per MCEM iteration. |
-| `iterations` | `500` | Number of simulation replications. |
+| `iterations` | `2000` | Number of simulation replications. |
 | `set.seed(...)` | `2021` | Random seed set before the simulation loop. |
 
 For an initial execution check, change `iterations = 2`, `N = 300`, `P = 100`, and `M = 5` **inside the main file**, before running it. These reduced settings are only for checking execution, not for reported inference. Values assigned in the console before sourcing are overwritten by the script.
